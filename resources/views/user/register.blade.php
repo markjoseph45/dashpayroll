@@ -27,7 +27,7 @@
 
 				<div class="">
 					
-					<form role="form" method="POST" action="{{ url('/dash') }}">
+					<form role="form" method="POST" action="{{ url('/signup') }}">
 
 						{{ csrf_field() }}
 

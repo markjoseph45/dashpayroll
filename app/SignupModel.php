@@ -4,8 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Dash extends Model
+class SignupModel extends Model
 {
+	
     protected $table = 'tbl_user';
 
     protected $fillable = [

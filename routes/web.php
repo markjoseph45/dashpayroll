@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('user/login');
+Route::get('/login/{company_name}', function ($company_name) {
+    return view('user/login', compact('company_name'));
 });
 
 Route::get('/register', function () {
@@ -23,6 +23,8 @@ Route::get('/payment', function() {
     return view('user/payment');
 });
 
-Route::get('/comp_info', 'CompController@store');
+Route::resource('/comp_info', 'CompanyInfoController');
 
-Route::resource('/dash', 'DashController');
+Route::resource('/signup', 'SignupController');
+
+Route::resource('/login', 'SigninController@login');

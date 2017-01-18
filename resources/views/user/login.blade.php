@@ -25,36 +25,38 @@
 
 			<div class="panel-body" id="login_panel_body">
 				
+				@include('errors.msg')
+
 				<div class="">
 					
 					<form role="form" method="POST" action="{{ url('/login') }}">
 
 						{{ csrf_field() }}
 
+						<input type="hidden" name="company_name" value="{{ $company_name }}">
+
 						<div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
 							<div class="input-group">
 								<input type="text" name="username" id="username" class="form-control" value="{{ old('username') }}" placeholder="Username" />
 								<div class="input-group-addon"></div>
-
-								@if ($errors->has('username'))
-								    <span class="help-block">
-								        <strong>{{ $errors->first('username') }}</strong>
-								    </span>
-								@endif
 							</div>
+							@if ($errors->has('username'))
+							    <span class="help-block">
+							        <strong>{{ $errors->first('username') }}</strong>
+							    </span>
+							@endif
 						</div>
 
 						<div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
 							<div class="input-group">
 								<input type="password" name="password" id="password" class="form-control" placeholder="Password" />
 								<div class="input-group-addon"></div>
-
-								@if ($errors->has('password'))
-								    <span class="help-block">
-								        <strong>{{ $errors->first('password') }}</strong>
-								    </span>
-								@endif
 							</div>
+							@if ($errors->has('password'))
+							    <span class="help-block">
+							        <strong>{{ $errors->first('password') }}</strong>
+							    </span>
+							@endif
 						</div>
 
 						<div align="center" id="forgot_password">
