@@ -1,0 +1,126 @@
+
+/*/////////////////////// LOGIN AREA ///////////////////////////////////*/
+
+#login_panel_wrapper{
+	background-color: #fff;
+	box-shadow: none;
+	border:none;
+}
+#login_panel_wrapper #login_header{
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 20px;
+	text-align: center;
+	background-color: #eee;
+	margin-bottom: 5px;
+	border-radius: 0px;
+}
+#login_panel_wrapper #login_header h3{
+	margin: 0px;
+	color: #2196f3;
+}
+#login_panel_wrapper #login_panel_body{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 30px;
+	padding-top: 40px;
+	background-color: #eee;
+	border-radius: 0px;
+}
+#login_panel_wrapper #login_down_caret i{
+	position: absolute;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 3px;
+	background-color: white;
+	font-size: 30px;
+	color: #424242;
+	border-radius: 100px;
+	left: 47%;
+	margin-top: -20px;
+}
+#login_panel_wrapper .input-group-addon{
+	padding-left: 20px;
+	background-color: #448aff;
+	border:1px solid #448aff;
+}
+#login_panel_wrapper #forgot_password{
+	font-size: 12px;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+#login_panel_wrapper #not_a_member{
+	font-size: 12px;
+	text-decoration: underline;
+}
+#login_panel_wrapper input[type="submit"]{
+	border-radius: 30px;
+	font-size: 20px;
+	padding:0px;
+}
+#login_img_wrapper{
+	padding: 15px;
+	background-color: #eeeeee;
+	margin-bottom: 10px;
+}
+#login_img_wrapper img{
+
+}
+
+/*//////////////////////////// END OF LOGIN AREA //////////////////////////////*/
+
+
+/*/////////////////////////////// PAYMENT AREA OPTION ///////////////////////*/
+#payment_main_wrapper{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+#payment_main_wrapper #payment_wrapper{
+	background-color: #fafafa;
+	height: 200px;
+	border-radius: 100%;
+	border: 2px solid #2196f3;
+}
+#payment_main_wrapper #payment_wrapper #payment_step1{
+	position: absolute;
+	top: 35%;
+	margin-left: -25px;
+	background-color: #fafafa;
+	border: 2px solid #2196f3;
+	padding: 20px;
+	border-radius: 100%;
+}
+#payment_main_wrapper #payment_wrapper #payment_step2{
+	position: absolute;
+	left: 37%;
+	margin-top: -25px;
+	background-color: #fafafa;
+	border: 2px solid #2196f3;
+	padding: 20px;
+	border-radius: 100%;
+}
+#payment_main_wrapper #payment_wrapper #payment_step3{
+	position: absolute;
+	top: 35%;
+	right: 0%;
+	margin-right: -25px;
+	background-color: #fafafa;
+	border: 2px solid #2196f3;
+	padding: 20px;
+	border-radius: 100%;
+}
+#payment_main_wrapper #payment_wrapper #payment_step4{
+	position: absolute;
+	bottom: 0%;
+	left: 37%;
+	margin-bottom: -25px;
+	background-color: #fafafa;
+	border: 2px solid #2196f3;
+	padding: 20px;
+	border-radius: 100%;
+}
+
+.fa-gears{
+	font-size: 20px;
+}
+/*/////////////////////////////// END OF PAYMENT AREA OPTION ///////////////////////*/
